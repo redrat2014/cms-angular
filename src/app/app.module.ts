@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
+import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [AfService],
   bootstrap: [AppComponent]

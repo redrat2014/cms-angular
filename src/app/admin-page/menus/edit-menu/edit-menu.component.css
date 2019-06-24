@@ -1,0 +1,16 @@
+.bt-green {
+  background: #46af11;
+  color: #fff;
+}
+
+.mat-raised-button {
+  width: 47%;
+}
+
+.mat-dialog-content {
+  text-align: center;
+}
+
+.mat-dialog-title {
+  text-align: left;
+}

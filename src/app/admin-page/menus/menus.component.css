@@ -13,3 +13,11 @@ table {
 .add-button {
   margin-left: 1rem;
 }
+
+.mat-column-actions {
+  text-align: right;
+}
+
+.bt-green {
+  color: #3da00b;
+}

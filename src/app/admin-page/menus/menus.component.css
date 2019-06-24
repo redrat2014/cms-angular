@@ -21,3 +21,7 @@ table {
 .bt-green {
   color: #3da00b;
 }
+
+.mat-form-field {
+  padding: 0 0.5rem;
+}

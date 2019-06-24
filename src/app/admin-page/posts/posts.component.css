@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+}
+
+.example-container {
+  padding: 20px;
+}
+
+.example-header-filter .mat-form-field {
+  width: 100%;
+}
+
+.add-button {
+  margin-left: 1rem;
+}
+
+.mat-column-actions {
+  text-align: right;
+}
+
+.bt-green {
+  color: #3da00b;
+}
+
+.mat-form-field {
+  padding: 0 0.5rem;
+}

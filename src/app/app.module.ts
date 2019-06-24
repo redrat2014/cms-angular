@@ -7,6 +7,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 
 import { AfService } from './providers/af.service';
 import { MenusService } from './service/menus/menus.service';
+import { PostsService } from './service/posts/posts.service';
 import { AppRoutingModule } from './app-routing.module';
 import { SubscriberGuard } from './guards/subscriber.guard';
 import { AdminGuard } from './guards/admin.guard';
@@ -19,6 +20,7 @@ import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore
 import { HomePageComponent } from './home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,7 @@ import { MaterialModule } from './material';
   exports: [
     BrowserAnimationsModule,
   ],
-  providers: [AfService, AdminGuard, SubscriberGuard, MenusService],
+  providers: [AfService, AdminGuard, SubscriberGuard, MenusService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

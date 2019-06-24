@@ -1,4 +1,3 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,6 +6,7 @@ import { PagesListComponent } from './pages-list/pages-list.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 
 import { AfService } from './providers/af.service';
+import { MenusService } from './service/menus/menus.service';
 import { AppRoutingModule } from './app-routing.module';
 import { SubscriberGuard } from './guards/subscriber.guard';
 import { AdminGuard } from './guards/admin.guard';
@@ -40,7 +40,7 @@ import { MaterialModule } from './material';
   exports: [
     BrowserAnimationsModule,
   ],
-  providers: [AfService, AdminGuard, SubscriberGuard],
+  providers: [AfService, AdminGuard, SubscriberGuard, MenusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

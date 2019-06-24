@@ -16,9 +16,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
-import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { AdminPageComponent } from './admin-page/admin-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 
@@ -27,19 +25,20 @@ import { MaterialModule } from './material';
     AppComponent,
     PagesListComponent,
     LoginPageComponent,
-    AppNavbarComponent,
     HomePageComponent,
-    AdminPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule,
+  ],
+  exports: [
+    BrowserAnimationsModule,
   ],
   providers: [AfService, AdminGuard, SubscriberGuard],
   bootstrap: [AppComponent]

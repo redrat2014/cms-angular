@@ -1,4 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
+import { MaterialModule } from './../material';
 
 @Component({
   selector: 'app-admin-page',
@@ -11,10 +13,12 @@ export class AdminPageComponent implements OnInit {
     {
       name: 'Menus',
       link: 'menus',
+      icon: 'menu'
     },
     {
       name: 'Posts',
       link: 'posts',
+      icon: 'mail_outline'
     }
   ];
 

@@ -5,7 +5,10 @@
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-nav-list>
       <mat-list-item *ngFor="let link of links">
-          <a matLine routerLink="/admin/{{ link.link }}">{{ link.name }}</a>
+          <a matLine routerLink="/admin/{{ link.link }}">
+            <mat-icon aria-label="edit">{{link.icon}}</mat-icon>
+            {{ link.name }}
+          </a>
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>

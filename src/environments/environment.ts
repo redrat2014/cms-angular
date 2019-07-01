@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyC4odYm9Aesc3mrPaTdCbo7XihoWojI0m0",
-    authDomain: "cms-database-7ea51.firebaseapp.com",
-    databaseURL: "https://cms-database-7ea51.firebaseio.com",
-    projectId: "cms-database-7ea51",
-    storageBucket: "cms-database-7ea51.appspot.com",
-    messagingSenderId: "178295237863",
-    appId: "1:178295237863:web:82363a5b6d16d085"
+    apiKey: "AIzaSyDDK0OXd2cTwCwB8NjXqM_4n6EMG78K1Gw",
+    authDomain: "feres-d2f71.firebaseapp.com",
+    databaseURL: "https://feres-d2f71.firebaseio.com",
+    projectId: "feres-d2f71",
+    storageBucket: "",
+    messagingSenderId: "610927403117",
+    appId: "1:610927403117:web:754c67a4b18a2018"
   }
 };
 
@@ -23,3 +23,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+

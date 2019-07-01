@@ -10,15 +10,45 @@ import { MaterialModule } from './../material';
 export class AdminPageComponent implements OnInit {
 
   links = [
+    // {
+    //   name: 'Menus',
+    //   link: 'menus',
+    //   icon: 'menu'
+    // },
+    // {
+    //   name: 'Posts',
+    //   link: 'posts',
+    //   icon: 'mail_outline'
+    // }
     {
-      name: 'Menus',
-      link: 'menus',
-      icon: 'menu'
+      name: 'Biografia',
+      link: 'biografia',
+      icon: 'account_circle'
     },
     {
-      name: 'Posts',
-      link: 'posts',
-      icon: 'mail_outline'
+      name: 'Repertório',
+      link: 'repertorio',
+      icon: 'library_music'
+    },
+    {
+      name: 'Projetos',
+      link: 'projetos',
+      icon: 'business_center'
+    },
+    {
+      name: 'Agenda',
+      link: 'agenda',
+      icon: 'event_note'
+    },
+    {
+      name: 'Fotos',
+      link: 'fotos',
+      icon: 'photo_library'
+    },
+    {
+      name: 'Videos',
+      link: 'videos',
+      icon: 'ondemand_video'
     }
   ];
 

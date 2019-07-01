@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { MaterialModule } from '../admin-page/material';
 import { PagesComponent } from './pages/pages.component';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { PagesComponent } from './pages/pages.component';
   imports: [
     CommonModule,
     FrontRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot(),
   ]
 })
 export class FrontPageModule { }

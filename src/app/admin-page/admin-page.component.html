@@ -1,12 +1,12 @@
 <app-navbar></app-navbar>
 
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container" autosize style="">
 
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-nav-list>
       <mat-list-item *ngFor="let link of links">
-          <a matLine routerLink="/admin/{{ link.link }}">
-            <mat-icon aria-label="edit">{{link.icon}}</mat-icon>
+          <a matLine routerLink="/admin/{{ link.link }}" style="font-size: 18px">
+            <mat-icon aria-label="edit" style="margin-right:0.2rem">{{link.icon}}</mat-icon>
             {{ link.name }}
           </a>
       </mat-list-item>

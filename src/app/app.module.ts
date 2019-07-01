@@ -1,3 +1,4 @@
+import { HomePageComponent } from './front-page/home-page/home-page.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -16,10 +17,12 @@ import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { MaterialModule } from './material';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
+
   ],
   exports: [
     BrowserAnimationsModule,

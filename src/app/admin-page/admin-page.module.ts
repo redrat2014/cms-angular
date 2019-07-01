@@ -12,6 +12,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConfirmationDialogComponent } from './shared/confirmation-dialog/confirmation-dialog.component';
 import { EditMenuComponent } from './menus/edit-menu/edit-menu.component';
 import { EditPostComponent } from './posts/edit-post/edit-post.component';
+import { BiografiaComponent } from './biografia/biografia.component';
+import { RepertorioComponent } from './repertorio/repertorio.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { FotosComponent } from './fotos/fotos.component';
+import { VideosComponent } from './videos/videos.component';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 @NgModule({
   declarations: [
@@ -24,6 +30,11 @@ import { EditPostComponent } from './posts/edit-post/edit-post.component';
     ConfirmationDialogComponent,
     EditMenuComponent,
     EditPostComponent,
+    BiografiaComponent,
+    RepertorioComponent,
+    AgendaComponent,
+    FotosComponent,
+    VideosComponent,
   ],
   entryComponents:[
     ConfirmationDialogComponent, 
@@ -35,7 +46,9 @@ import { EditPostComponent } from './posts/edit-post/edit-post.component';
     MaterialModule,
     AdminRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot(),
   ]
 })
 export class AdminPageModule { }

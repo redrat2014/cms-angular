@@ -8,3 +8,9 @@ body {
 img {
   max-width: 100%;
 }
+
+.mat-list-item-content{
+  padding: 0 !important;
+
+}
+

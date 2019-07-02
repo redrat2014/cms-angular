@@ -7,7 +7,8 @@ import { AdminGuard } from './guards/admin.guard';
 const routes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'login', component: LoginPageComponent},
-  {path: 'admin', loadChildren: () => import('./admin-page/admin-page.module').then(m => m.AdminPageModule), canActivate: [AdminGuard]},
+  // {path: 'admin', loadChildren: () => import('./admin-page/admin-page.module').then(m => m.AdminPageModule), canActivate: [AdminGuard]},
+  {path: 'admin', loadChildren: () => import('./admin-page/admin-page.module').then(m => m.AdminPageModule)},
   {path: '**', redirectTo: ''}
 ]
 

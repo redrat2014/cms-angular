@@ -18,6 +18,7 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { FotosComponent } from './fotos/fotos.component';
 import { VideosComponent } from './videos/videos.component';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { ProjetosComponent } from './projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
     AgendaComponent,
     FotosComponent,
     VideosComponent,
+    ProjetosComponent,
   ],
   entryComponents:[
     ConfirmationDialogComponent, 

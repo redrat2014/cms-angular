@@ -1,12 +1,17 @@
+<button type="button" class="toggleSidenav" mat-button 
+    (click)="status=!status"  
+    >
+    <i class="material-icons">menu</i>
+</button>
 <app-navbar></app-navbar>
 
-<mat-drawer-container class="example-container" autosize style="">
+<mat-drawer-container class="example-container" autosize>
 
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer class="mat-elevation-z4" #drawer class="example-sidenav" mode="side" opened [ngClass]="status ? 'left-compact' : 'left-expanded'" mat-elevation-z4 style="transform: scale(1)">
     <mat-nav-list>
-      <mat-list-item *ngFor="let link of links">
-          <a matLine routerLink="/admin/{{ link.link }}" style="font-size: 18px">
-            <mat-icon aria-label="edit" style="margin-right:0.2rem">{{link.icon}}</mat-icon>
+      <mat-list-item *ngFor="let link of links" style="margin: 0.5rem 0">
+          <a routerLinkActive="active" matLine routerLink="/admin/{{ link.link }}" style="font-size: 16px; display:flex;align-items: flex-end;">
+            <mat-icon aria-label="edit" style="margin-right:0.9rem">{{link.icon}}</mat-icon>
             {{ link.name }}
           </a>
       </mat-list-item>
@@ -14,9 +19,7 @@
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      <i class="material-icons">menu</i>
-    </button>
+
     <router-outlet></router-outlet>
   </div>
 

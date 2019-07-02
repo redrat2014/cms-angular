@@ -1,3 +1,4 @@
+import { ProjetosComponent } from './projetos/projetos.component';
 import { VideosComponent } from './videos/videos.component';
 import { FotosComponent } from './fotos/fotos.component';
 import { AgendaComponent } from './agenda/agenda.component';
@@ -35,6 +36,10 @@ const routes: Routes = [
       {
         path: 'repertorio',
         component: RepertorioComponent
+      },
+      {
+        path: 'projetos',
+        component: ProjetosComponent
       },
       {
         path: 'agenda',

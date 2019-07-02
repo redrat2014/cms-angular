@@ -7,7 +7,7 @@
 
 <mat-drawer-container class="example-container" autosize>
 
-  <mat-drawer class="mat-elevation-z4" #drawer class="example-sidenav" mode="side" opened [ngClass]="status ? 'left-compact' : 'left-expanded'" mat-elevation-z4 style="transform: scale(1)">
+  <mat-drawer class="mat-elevation-z4" #drawer class="example-sidenav" mode="side" opened [ngClass]="status ? 'left-compact' : 'left-expanded'" mat-elevation-z4>
     <mat-nav-list>
       <mat-list-item *ngFor="let link of links" style="margin: 0.5rem 0">
           <a routerLinkActive="active" matLine routerLink="/admin/{{ link.link }}" style="font-size: 16px; display:flex;align-items: flex-end;">

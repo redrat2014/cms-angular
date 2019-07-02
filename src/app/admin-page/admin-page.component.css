@@ -21,6 +21,7 @@
 
 }
 
+
 ::ng-deep .mat-drawer-content {
   z-index: 4 !important;
 }
@@ -70,7 +71,9 @@
 .mat-drawer-side {
   border-right: solid 1px #56a4ae;
   transform: scale(1)!important;
+  position: fixed;
 }
+
 
 .mat-nav-list a.active {
   background: rgba(0, 0, 0, 0.35)!important;

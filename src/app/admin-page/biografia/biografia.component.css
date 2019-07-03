@@ -1,0 +1,21 @@
+.header-fixed {
+  position: fixed;
+  background: #ffffff;
+  width: 91.5%;
+  z-index: 10;
+  padding: 1rem 1.5rem;
+  top: 4rem;
+  left: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  padding-top: 4rem;
+} 
+
+.bt-update {
+  background: #0094a7;
+  color: white;
+}

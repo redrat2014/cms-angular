@@ -72,6 +72,8 @@
   border-right: solid 1px #56a4ae;
   transform: scale(1)!important;
   position: fixed;
+  margin-top: 4rem;
+  overflow-x: hidden;
 }
 
 
